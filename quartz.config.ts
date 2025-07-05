@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "zh-CN",
-    baseUrl: "https://dhammavipassi.github.io/Quartz-Garden",
+    baseUrl: "dhammavipassi.github.io/Quartz-Garden",
     ignorePatterns: ["private", "_templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
