@@ -8,12 +8,12 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🌱 Dhammavipassiの数字花园",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
-    locale: "en-US",
-    baseUrl: "sosiristseng.github.io/template-quartz",
+    locale: "zh-CN",
+    baseUrl: "https://dhammavipassi.github.io/Quartz-Garden",
     ignorePatterns: ["private", "_templates", ".obsidian"],
     defaultDateType: "created",
     theme: {

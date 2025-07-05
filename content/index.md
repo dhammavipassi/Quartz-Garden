@@ -1,7 +1,35 @@
 ---
-title: Welcome to Quartz 4
+title: 欢迎来到我的数字花园
 ---
 
-Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites. Thousands of students, developers, and teachers publish personal notes, wikis, and [digital gardens](https://jzhao.xyz/posts/networked-thought) to the web.
+# 🌱 欢迎来到Dhammavipassiの数字花园
 
-See the [official documentation](https://quartz.jzhao.xyz/) for more details.
+这里是我的个人数字花园，包含关于阿毗达摩(Abhidhamma)和佛教修行的笔记与思考。
+
+## 最近更新
+
+这个网站使用 [Quartz 4](https://quartz.jzhao.xyz/) 构建，支持：
+
+- 🔍 全文搜索
+- 🕸️ 关系图谱
+- 🔗 双向链接
+- 📱 响应式设计
+- 🌓 深色模式
+- ⚡ 快速加载
+
+## 开始探索
+
+您可以：
+- 使用左侧的导航栏浏览内容
+- 使用搜索功能查找特定主题
+- 查看页面底部的关系图谱
+- 点击任何链接深入了解相关概念
+
+## 主要内容
+
+- [[念于息简要讨论]] - 佛教禅修技巧的详细解说
+- [[AI 绘画提示词生成专家Prompt]] - AI工具使用指南
+
+---
+
+*愿一切众生离苦得乐，愿正法久住世间。*
