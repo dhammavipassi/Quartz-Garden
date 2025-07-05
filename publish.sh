@@ -16,11 +16,26 @@ COMMIT_MESSAGE="feat: publish updates on $(date +'%Y-%m-%d %H:%M:%S')"
 # === 脚本开始 ===
 echo "🚀 开始一键发布您的数字花园..."
 
-# 1. 同步文件
-# 使用 rsync 来确保源和目标目录的完全同步
-# --delete 选项会删除目标目录中多余的文件
-echo "🔄 正在同步文章从源目录到目标目录..."
-rsync -av --delete "$SOURCE_DIR/" "$DEST_DIR/"
+# 1. 移动文件（避免重复）
+echo "🔄 正在移动文章从Obsidian到Quartz Garden..."
+
+# 检查源目录是否存在且不为空
+if [ ! -d "$SOURCE_DIR" ] || [ -z "$(ls -A "$SOURCE_DIR" 2>/dev/null)" ]; then
+    echo "⚠️  源目录不存在或为空：$SOURCE_DIR"
+    exit 0
+fi
+
+# 确保目标目录存在
+mkdir -p "$DEST_DIR"
+
+# 移动所有文件到目标目录
+echo "📁 移动文件..."
+mv "$SOURCE_DIR"/* "$DEST_DIR/" 2>/dev/null || {
+    echo "⚠️  没有文件需要移动，或移动失败"
+    exit 0
+}
+
+echo "✅ 文件移动完成，Obsidian中的Publish文件夹现已清空"
 
 # 2. 进入 Git 仓库目录
 cd "$REPO_DIR" || { echo "❌ 错误：无法进入仓库目录 $REPO_DIR"; exit 1; }
